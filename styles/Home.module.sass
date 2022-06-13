@@ -1,0 +1,138 @@
+@keyframes extendDiv
+  0%
+    width: 25%
+  100%
+    width: 75%  
+@keyframes displayDiv
+  0%
+    opacity: 0
+  100%
+    opacity: 100
+
+.title 
+  width: max-content
+  height: 30px
+  font-size: 6mm
+  font-family: Arial, Helvetica, sans-serif
+  color: white
+  margin-bottom: 30px
+  &::hover
+  cursor: pointer
+
+.container
+  display: flex
+  height: 100vh  
+  flex-direction: row
+.h5
+  color: black
+
+.item
+  display: grid
+  justify-content: center
+  align-items: center
+  width: 25%
+  height: 100vh
+  
+.wide 
+  width: 75%
+  height: 100vh
+  animation: extendDiv 0.5s
+
+.content
+  color: white
+  animation: displayDiv 1.0s
+  margin: 100px
+
+.colorReload
+  position: absolute
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  background-color: black
+  bottom: 20px
+  right: 20px
+  &:hover
+    cursor: pointer
+
+.techstack
+  display: flex
+  flex-direction: row
+
+.techstack_item
+  color: white
+  font-size: small
+  width: max-content
+  border: 1px solid white
+  padding: 6px
+  margin-right: 10px
+  border-radius: 2px
+  &:hover
+    cursor: default
+
+.socials
+  display: flex
+  flex-direction: row
+  align-items: center
+  // border: 1px solid green
+  .techstack_item
+    &:hover
+      cursor: pointer
+
+@mixin social
+  width: 18px
+  height: 18px
+  background-repeat: no-repeat
+  background-position: center
+  margin-right: 10px
+  background-size: cover
+  filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(338deg) brightness(101%) contrast(101%)
+  &:hover
+    cursor: pointer
+
+.linkedin
+  @include social
+  background-image: url('../styles/lnkdn.svg')
+  margin-left: 10px
+.youtube
+  @include social
+  background-image: url('../styles/youtube.svg')
+  margin-left: 10px
+.github
+  @include social
+  background-image: url('../styles/gthb.svg')
+  margin-left: 20px
+
+
+
+@keyframes lineAppear
+  0%
+    width: 0
+  100%
+    width: 100%
+
+.linkLine 
+    width: auto
+    border-bottom: 2px solid white
+    opacity: 0
+.link 
+    width: max-content
+    color: white
+.link:hover 
+    cursor: pointer
+.link:hover > .linkLine
+    opacity: 1
+    border-bottom: 2px solid white
+    animation: lineAppear 0.5s ease
+
+.tooltip
+  position: absolute
+  color: white
+  height: 20px
+  font-size: small
+  background-color: black
+  border-radius: 2px
+  padding: 2px 7px
+  bottom: 25px
+  right: 55px
+  &:hover
+    cursor: pointer
