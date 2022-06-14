@@ -42,6 +42,9 @@
   color: white
   animation: displayDiv 1.0s
   margin: 100px
+  p
+    font-family: Arial, Helvetica, sans-serif
+    line-height: 1.5em
 
 .colorReload
   position: absolute
@@ -79,8 +82,8 @@
       cursor: pointer
 
 @mixin social
-  width: 18px
-  height: 18px
+  width: 24px
+  height: 24px
   background-repeat: no-repeat
   background-position: center
   margin-right: 10px
@@ -91,7 +94,7 @@
 
 .linkedin
   @include social
-  background-image: url('../styles/lnkdn.svg')
+  background-image: url('../styles/linkedin.svg')
   margin-left: 10px
 .youtube
   @include social
@@ -99,7 +102,7 @@
   margin-left: 10px
 .github
   @include social
-  background-image: url('../styles/gthb.svg')
+  background-image: url('../styles/github.svg')
   margin-left: 20px
 
 
