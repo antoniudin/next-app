@@ -28,7 +28,7 @@ export default function Home() {
   const [items, setItems] = useState([
     {id:0, name: 'About', wide: true},
     {id:1, name: 'Expirience', wide: false},
-    {id:2, name: 'Work', wide: false},
+    {id:2, name: 'Projects', wide: false},
     {id:3, name:'Contact', wide: false},
 ]) 
   const [colors, setColor] = useState(['#656565', '#808782', '#A6D3A0', '#D1FFD7'])

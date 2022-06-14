@@ -5,26 +5,23 @@ import Link from './link'
 export default function Work() {
     return (
         <div className={styles.content}>
-            <h2>Some things I’ve built</h2>
-            <h3>To Do List</h3>
-            <div>My first project on .Net platform</div>
-            <br />
-            <Tech things={['.Net Core', 'jQuery', 'SQL']}/>
+            <h2>Some things I've built</h2>
+            <h4>Meetty.me</h4>
+            <p>A web app for online event booking and schedule management. <br />
+            I worked on the logic, routing, server requests and data processing, responsive design for all pages. 
+            For this project I did not use any third-party libraries and created all components (calendar, menus, drop-down lists, notifications, buttons and toggles) from scratch, using only pure css.</p>
 
-            <h3>bit.ly analog</h3>
-            <div>A small web app, partly repeats the functionality of bit.ly. You can create a link, give it a short name and track it</div>
-            <br />
-            <Tech things={['.NET API', 'SQL', 'React', 'html', 'css']}/>
-            
-            <h3>UNO game</h3>
-            <div>Lorem Ipsum Lorem ipsum Ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem Ipsum Lorem ipsum</div>
-            <br />
-            <Tech things={['JavaScript', 'React', 'html', 'css']}/>
-
-            <h3>Meetty.com</h3>
-            <div>My first commercial project wich I'm really proud.</div>
-            <br />
-            <Tech things={['JavaScript', 'React', 'Redux', 'sass', 'html', 'css']}/>
+            <Tech things={['React', 'Redux', 'JavaScript', 'html', 'css']}/>
+        
+            <h4>Links</h4>
+            <p>Small web app, partly repeats the functionality of bit.ly. You can create a link, give it a short name and track it</p>
+        
+            <Tech things={['.NET API', 'MS SQL', 'React', 'html', 'css']}/>
+            <h4>To Do list</h4>
+            <p>A simple do to list, built on .net platform with user authentification, different types of user roles,  </p>
+        
+            <Tech things={['.NET Core','C#', 'MVC','Entity Framework','MS SQL', 'LINQ', 'bootstrap']}/>
+        
         </div>
     )
   }

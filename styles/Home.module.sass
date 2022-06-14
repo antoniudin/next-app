@@ -8,6 +8,13 @@
     opacity: 0
   100%
     opacity: 100
+@mixin row
+  display: flex
+  flex-direction: row
+
+@mixin no_margin
+  margin:0
+  padding: 0
 
 .title 
   width: max-content
@@ -20,12 +27,11 @@
   cursor: pointer
 
 .container
-  display: flex
+  @include row
   height: 100vh  
-  flex-direction: row
-.h5
-  color: black
-
+  h4
+  @include no_margin
+  
 .item
   display: grid
   justify-content: center
@@ -43,8 +49,12 @@
   animation: displayDiv 1.0s
   margin: 100px
   p
+    margin-top: 0
+    margin-bottom: 10px
     font-family: Arial, Helvetica, sans-serif
     line-height: 1.5em
+  h4
+    margin-bottom: 10px
 
 .colorReload
   position: absolute
@@ -58,8 +68,7 @@
     cursor: pointer
 
 .techstack
-  display: flex
-  flex-direction: row
+  @include row
 
 .techstack_item
   color: white
@@ -73,38 +82,59 @@
     cursor: default
 
 .socials
-  display: flex
-  flex-direction: row
+  @include row
   align-items: center
-  // border: 1px solid green
   .techstack_item
     &:hover
       cursor: pointer
 
-@mixin social
+@mixin icon
   width: 24px
   height: 24px
   background-repeat: no-repeat
   background-position: center
+  margin-left: 10px
   margin-right: 10px
   background-size: cover
   filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(338deg) brightness(101%) contrast(101%)
   &:hover
     cursor: pointer
 
+.subtitle
+  margin-left: 0.4em
+  margin-right: 0.4em
+  text-decoration: underline
+
+.manager
+  @include icon
+  margin-left: 0
+  background-image: url('../styles/manager.svg')
+  &:hover
+    cursor: default
+.owner
+  @include icon
+  margin-left: 0
+  background-image: url('../styles/owner.svg')
+  &:hover
+    cursor: default
+
 .linkedin
-  @include social
+  @include icon
   background-image: url('../styles/linkedin.svg')
-  margin-left: 10px
 .youtube
-  @include social
+  @include icon
   background-image: url('../styles/youtube.svg')
-  margin-left: 10px
 .github
-  @include social
+  @include icon
   background-image: url('../styles/github.svg')
   margin-left: 20px
 
+.skill_title
+  @include row
+  align-items: center
+  margin-bottom: 10px
+  h4
+    @include no_margin
 
 
 @keyframes lineAppear
