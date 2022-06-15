@@ -69,6 +69,7 @@ export default function Home() {
 
   return (
     <Fragment>
+    
     <div className={styles.container}>
       {items.map(entity=>
         <div 

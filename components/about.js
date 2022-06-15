@@ -4,17 +4,14 @@ import Link from './link'
 export default function About() {
     return (
         <div className={styles.content}>
+            <div className={styles.shortcontent}>
             <p>Hi, my name is</p>
+            </div>
             <h2>Anton Iudin</h2>
         <p>
-I have been working in IT for more than ten years.
-I have worked my way up from a technical support specialist to a product owner. Along the way, I've been a part of many interesting projects. I've been working as a 
-<span className={styles.subtitle}>software engineer</span>
-for the last couple of years and use all my knowledge to help people create something really cool. 
-<br />
-<br />
-I have experience with .NET, C#, MVC, MS SQL, RESTfull APIs, so I can work on the server side if you're dealing with the Microsoft stack. But lately I've been focusing on Front-end and feel quite comfortable with JavaScriptan and React.</p>
-            <p></p>
+        I'm a software engineer with previous expirience in IT wich I use working on different projects. <br /><br />
+I have an experience with .NET, C#, MVC, MS SQL, RESTfull APIs <br />I can work on the server side if you're dealing with Microsoft stack. But recently I'm focused on front-end and deal with JavaScript and React. 
+            </p>
             <br />
         
             <div className={styles.socials}>
