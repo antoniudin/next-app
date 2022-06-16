@@ -75,9 +75,8 @@ export default function Home() {
         <div 
         key={entity.id} 
         style={{backgroundColor: colors[entity.id]}} 
-        className={`${entity.wide? styles.wide:styles.item}`} 
-        onClick={()=>wideProcessing(entity.id)}>
-        {!entity.wide? <div className={styles.title}>{<Link value={entity.name}/>}</div> : getLayout(entity.id)}
+        className={`${entity.wide? styles.wide:styles.item}`} >
+        {!entity.wide? <div onClick={()=>wideProcessing(entity.id)} className={styles.title}>{<Link value={entity.name}/>}</div> : getLayout(entity.id)}
         </div>  
     )}
     </div>

@@ -1,5 +1,27 @@
-$one: 1
+$text-color: white
+$icon-size: 24px
 
+@mixin pointer
+  &:hover
+    cursor: pointer
+
+@mixin person_icon
+  margin-left: 0
+  &:hover
+    cursor: default
+
+@mixin icon($name)
+  width: $icon-size
+  height: $icon-size
+  background-repeat: no-repeat
+  background-position: center
+  margin-left: 10px
+  margin-right: 10px
+  background-size: cover
+  background-image: url('../styles/#{$name}.svg')
+  filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(338deg) brightness(101%) contrast(101%)
+  @include pointer
+  
 @mixin row 
   display: flex
   flex-direction: row
@@ -7,15 +29,17 @@ $one: 1
 @mixin no_margin
   margin:0
   padding: 0
+@mixin grid_center
+  display: grid
+  justify-content: center
+  align-items: center
   
 @media (min-width: 1100px)
   .container
     @include row
     height: 100vh
   .item
-    display: grid
-    justify-content: center
-    align-items: center
+    @include grid_center
     width: 25%
     height: 100vh
   
@@ -23,24 +47,20 @@ $one: 1
   width: 75%
   height: 100vh
   animation: extendDiv 0.5s 
+  border: 1px solid transparent
 .content
    margin: 100px
   
 @media (max-width: 1100px)
-  .container 
-    border: 2px solid red
   .item
-    display: grid
-    justify-content: center
-    align-items: center
+    @include grid_center
     height: 25vh
   .wide
     width: 100%
     height: 50vh
-    border: 2px solid green
     animation: none
   .content
-    margin: 40px
+    margin: 60px
   .shortcontent
     display: none
     
@@ -55,19 +75,16 @@ $one: 1
   100%
     opacity: 100
 
-  
 .title 
   width: max-content
   height: 30px
   font-size: 6mm
   font-family: Arial, Helvetica, sans-serif
-  color: white
-  margin-bottom: 30px
-  &::hover
-  cursor: pointer
-
+  color: $text-color
+  @include pointer
+  
 .content
-  color: white
+  color: $text-color
   animation: displayDiv 1.0s
   p
     margin-top: 0
@@ -85,41 +102,28 @@ $one: 1
   background-color: black
   bottom: 20px
   right: 20px
-  &:hover
-    cursor: pointer
+  @include pointer
 
 .techstack
   @include row
 
 .techstack_item
-  color: white
+  color: $text-color
   font-size: small
   width: max-content
-  border: 1px solid white
+  border: 1px solid $text-color
   padding: 6px
   margin-right: 10px
   border-radius: 2px
-  &:hover
-    cursor: default
+  @include person_icon
+  
 
 .socials
   @include row
   align-items: center
   .techstack_item
-    &:hover
-      cursor: pointer
+    @include pointer
 
-@mixin icon
-  width: 24px
-  height: 24px
-  background-repeat: no-repeat
-  background-position: center
-  margin-left: 10px
-  margin-right: 10px
-  background-size: cover
-  filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(338deg) brightness(101%) contrast(101%)
-  &:hover
-    cursor: pointer
 
 .subtitle
   margin-left: 0.4em
@@ -127,27 +131,18 @@ $one: 1
   text-decoration: underline
 
 .manager
-  @include icon
-  margin-left: 0
-  background-image: url('../styles/manager.svg')
-  &:hover
-    cursor: default
+  @include icon('manager')
+  @include person_icon
 .owner
-  @include icon
-  margin-left: 0
-  background-image: url('../styles/owner.svg')
-  &:hover
-    cursor: default
+  @include icon('owner')
+  @include person_icon
 
 .linkedin
-  @include icon
-  background-image: url('../styles/linkedin.svg')
+  @include icon('linkedin')
 .youtube
-  @include icon
-  background-image: url('../styles/youtube.svg')
+  @include icon('youtube')
 .github
-  @include icon
-  background-image: url('../styles/github.svg')
+  @include icon('github')
   margin-left: 20px
 
 .skill_title
@@ -166,21 +161,21 @@ $one: 1
 
 .linkLine 
     width: auto
-    border-bottom: 2px solid white
+    border-bottom: 2px solid $text-color
     opacity: 0
 .link 
     width: max-content
-    color: white
+    color: $text-color
 .link:hover 
     cursor: pointer
 .link:hover > .linkLine
     opacity: 1
-    border-bottom: 2px solid white
+    border-bottom: 2px solid $text-color
     animation: lineAppear 0.5s ease
 
 .tooltip
   position: fixed
-  color: white
+  color: $text-color
   height: 20px
   font-size: small
   background-color: black
@@ -188,5 +183,4 @@ $one: 1
   padding: 2px 7px
   bottom: 25px
   right: 55px
-  &:hover
-    cursor: pointer
+  @include pointer
