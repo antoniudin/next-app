@@ -8,7 +8,7 @@ export default function Tech(props) {
   return (
     <div className={styles.techstack}>
       {things.map(thing=> 
-        <div className={styles.techstack_item}>{thing}</div>
+        <div key={thing} className={styles.techstack_item}>{thing}</div>
         )}
     </div>
   )

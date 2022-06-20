@@ -9,13 +9,17 @@ import Link from '../components/link'
 export default function Home() {
 
   const colorSet=[
-    ['#64403E', '#6C6061', '#838E83', '#B2BCAA'],
+    
     ['#102E4A', '#55C1FF', '#5887FF', '#A682FF'],
     ['#FF7477', '#E69597', '#B5D6D6', '#6edddd'],
-    ['#273B09', '#58641D', '#7B904B', '#DBD2E0'],
+    ['#273B09', '#58641D', '#7B904B', '#b3acb7'],
     ['#002400', '#273B09', '#58641D', '#7B904B'],
+    ['#706993', '#70A0AF', '#A0C1B9', '#dbc583'],    
+    ['#2D7DD2', '#EEB902', '#F45D01', '#474647'],
+    ['#07090F', '#98473E', '#A37C40', '#B49082'],
     ['#64403E', '#6C6061', '#838E83', '#B2BCAA'],
-    ['#2D7DD2', '#EEB902', '#F45D01', '#474647']
+
+    ['#582B11', '#AF125A', '#BD8B9C', '#87F1FF'],
   ]
   
   const phrases = [
@@ -34,7 +38,7 @@ export default function Home() {
   const [colors, setColor] = useState(['#656565', '#808782', '#A6D3A0', '#D1FFD7'])
   
   const chaneColor = () => {
-    const color = Math.floor(Math.random()*6)
+    const color = Math.floor(Math.random()*9)
     setColor(colorSet[color])    
     if (counter<5) setCounter(counter+1)
   }

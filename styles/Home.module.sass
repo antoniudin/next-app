@@ -49,7 +49,7 @@ $icon-size: 24px
   animation: extendDiv 0.5s 
   border: 1px solid transparent
 .content
-   margin: 100px
+  margin: 100px
   
 @media (max-width: 1100px)
   .item
@@ -60,7 +60,7 @@ $icon-size: 24px
     height: 50vh
     animation: none
   .content
-    margin: 60px
+    margin: 40px
   .shortcontent
     display: none
     
@@ -107,7 +107,7 @@ $icon-size: 24px
 .techstack
   @include row
 
-.techstack_item
+.techstack_item, .contact_button
   color: $text-color
   font-size: small
   width: max-content
@@ -116,14 +116,17 @@ $icon-size: 24px
   margin-right: 10px
   border-radius: 2px
   @include person_icon
-  
+.contact_button
+  @include pointer
+  &:hover
+    border-radius: 2px
+    border: 2px solid white
 
 .socials
   @include row
   align-items: center
   .techstack_item
     @include pointer
-
 
 .subtitle
   margin-left: 0.4em
@@ -152,7 +155,6 @@ $icon-size: 24px
   h4
     @include no_margin
 
-
 @keyframes lineAppear
   0%
     width: 0
@@ -172,6 +174,38 @@ $icon-size: 24px
     opacity: 1
     border-bottom: 2px solid $text-color
     animation: lineAppear 0.5s ease
+
+._input
+  border: 0
+  border-bottom: 1px solid white
+  border-radius: 2px
+  color: $text-color
+  caret-color: white
+  background-color: transparent
+  line-height: 30px
+  &:focus
+    border-bottom: 2px solid white
+    outline: none
+  
+._textarea
+  resize: none
+  height: 60px
+  border: 1px solid white
+  background-color: transparent
+  color: white
+  caret-color: white
+  padding: 5px
+  margin-top: 10px
+  &::placeholder
+    color: $text-color
+  
+  &:focus
+    border: 2px solid white
+    outline: none
+
+._form
+  display: flex
+  flex-direction: column
 
 .tooltip
   position: fixed

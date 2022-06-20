@@ -5,17 +5,21 @@ export default function Work() {
     return (
         <div className={styles.content}>
             <h2>What I've built</h2>
-            <h4>Meetty.me</h4>
+            <h4><a href="https://meetty.me">Meetty.me</a></h4>
+            
             <p>A web app for online event booking and schedule management. <br />
             I worked on the logic, routing, server requests and data processing, responsive design for all pages. 
-            For this project I did not use any third-party libraries and created all components (calendar, menus, drop-down lists, notifications, buttons and toggles) from scratch, using only pure css.</p>
+            For this project I did not use any third-party libraries and created all the components 
+            from scratch, using only pure css.</p>
 
-            <Tech things={['React', 'Redux', 'JavaScript', 'html', 'css']}/>
+            <Tech things={['React', 'Redux', 'Java Script', 'html', 'css']}/>
+            <br />
+            <p>You can take a look at my other projects on <a target="_blank" href="https://github.com/antoniudin">Github</a></p>
             <div className={styles.shortcontent}>
-            <h4>Links</h4>
-            <p>Small web app, partly repeats the functionality of bit.ly. You can create a link, give it a short name and track it</p>
+            <h4>UNO game</h4>
+            <p>One of my pet projects, you can play UNO online against two players managed by the computer</p>
         
-            <Tech things={['.NET API', 'MS SQL', 'React', 'html', 'css']}/>
+            <Tech things={['React', 'Java Script', 'html', 'css']}/>
             <h4>To Do list</h4>
             <p>A simple do to list, built on .net platform with user authentification, different types of user roles,  </p>
         
