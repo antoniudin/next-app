@@ -4,7 +4,7 @@ import Tech from './tech'
 export default function Work() {
     return (
         <div className={styles.content}>
-            <h2>What I've built</h2>
+            <h2>What I have built</h2>
             <h4><a href="https://meetty.me">Meetty.me</a></h4>
             
             <p>A web app for online event booking and schedule management. <br />
@@ -14,7 +14,7 @@ export default function Work() {
 
             <Tech things={['React', 'Redux', 'Java Script', 'html', 'css']}/>
             <br />
-            <p>You can take a look at my other projects on <a target="_blank" href="https://github.com/antoniudin">Github</a></p>
+            <p>You can take a look at my other projects on <a href="https://github.com/antoniudin">Github</a></p>
             <div className={styles.shortcontent}>
             <h4>UNO game</h4>
             <p>One of my pet projects, you can play UNO online against two players managed by the computer</p>
