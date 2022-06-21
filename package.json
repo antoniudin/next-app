@@ -5,6 +5,8 @@
   "homepage": "https://antoniudin.github.io/next-app/",
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
