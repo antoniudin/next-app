@@ -9,8 +9,8 @@ export default function About() {
             </div>
             <h2>Anton Iudin</h2>
         <p>
-        I'm a software engineer with previous expirience in IT wich I use working on different projects. <br /><br />
-I have an experience with .NET, C#, MVC, MS SQL, RESTfull APIs <br />I can work on the server side if you're dealing with Microsoft stack. But recently I'm focused on front-end and deal with JavaScript and React. 
+        I am a software engineer with previous expirience in IT wich I use working on different projects. <br /><br />
+I have an experience with .NET, C#, MVC, MS SQL, RESTfull APIs <br />I can work on the server side if you are dealing with Microsoft stack. But recently I am focused on front-end and deal with JavaScript and React. 
             </p>
             <br />
         
