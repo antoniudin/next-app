@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.sass'
 export default function About() {
     return (
         <div className={styles.content}>
-            <h2>What I’ve done</h2>
+            <h2>What I have done</h2>
             <div className={styles.skill_title}>
             <div className={styles.owner}></div>
                 <h4>Ownership</h4>

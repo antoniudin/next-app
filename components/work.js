@@ -11,14 +11,14 @@ export default function Work() {
             I did not use any third-party libraries and created all the components 
             from scratch, using only pure css.</p>
 
-            <Tech things={['React', 'Redux', 'js', 'html', 'css']}/>
+            <Tech things={['React', 'Redux', 'js', 'css', 'html']}/>
             <br />
             <p>Take a look at my other projects on <a href="https://github.com/antoniudin">Github</a></p>
             <div className={styles.shortcontent}>
             <h4>UNO game</h4>
             <p>One of my pet projects, you can play UNO online against two players managed by the computer</p>
         
-            <Tech things={['React', 'Java Script', 'html', 'css']}/>
+            <Tech things={['React', 'Java Script', 'css', 'html']}/>
             <h4>To Do list</h4>
             <p>A simple do to list, built on .net platform with user authentification, different types of user roles,  </p>
         
