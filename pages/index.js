@@ -18,7 +18,7 @@ export default function Home() {
     ['#2D7DD2', '#EEB902', '#F45D01', '#474647'],
     ['#07090F', '#98473E', '#A37C40', '#B49082'],
     ['#64403E', '#6C6061', '#838E83', '#B2BCAA'],
-
+    ['#381D2A', '#3E6990', '#F39B6D', '#AABD8C'],
     ['#582B11', '#AF125A', '#BD8B9C', '#87F1FF'],
   ]
   
@@ -33,7 +33,7 @@ export default function Home() {
     {id:0, name: 'About', wide: true},
     {id:1, name: 'Expirience', wide: false},
     {id:2, name: 'Projects', wide: false},
-    {id:3, name:'Contact', wide: false},
+    {id:3, name: 'Contact', wide: false},
 ]) 
   const [colors, setColor] = useState(['#656565', '#808782', '#A6D3A0', '#D1FFD7'])
   

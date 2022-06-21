@@ -1,8 +1,5 @@
 import styles from '../styles/Home.module.sass'
 
-
-
-
 export default function Contact() {
     
     const emailMe = () => {
