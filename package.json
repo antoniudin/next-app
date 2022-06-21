@@ -2,7 +2,7 @@
   "name": "next-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://profile.github.io",
+  "homepage": "https://antoniudin.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
