@@ -10,7 +10,7 @@ export default function Contact() {
         <div className={styles.content}>
             <h2>Get In Touch</h2>
             
-            <p>I’m currently looking for a job. If you have an interesting project, a job or you just  like my portfolio, feel free to send me a message.'</p>
+            <p>I’m currently looking for a job. If you have an interesting project, a job or you just  like my portfolio, feel free to send me a message.</p>
             
             <div className={styles.contact_button} onClick={()=>emailMe()}>Say Hello</div>
             
