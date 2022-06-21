@@ -7,14 +7,13 @@ export default function Work() {
             <h2>What I have built</h2>
             <h4><a href="https://meetty.me">Meetty.me</a></h4>
             
-            <p>A web app for online event booking and schedule management. <br />
-            I worked on the logic, routing, server requests and data processing, responsive design for all pages. 
-            For this project I did not use any third-party libraries and created all the components 
+            <p>A web app for online event booking and schedule management. I worked on the logic, routing, server requests and data processing, responsive design for all pages. 
+            I did not use any third-party libraries and created all the components 
             from scratch, using only pure css.</p>
 
-            <Tech things={['React', 'Redux', 'Java Script', 'html', 'css']}/>
+            <Tech things={['React', 'Redux', 'js', 'html', 'css']}/>
             <br />
-            <p>You can take a look at my other projects on <a href="https://github.com/antoniudin">Github</a></p>
+            <p>Take a look at my other projects on <a href="https://github.com/antoniudin">Github</a></p>
             <div className={styles.shortcontent}>
             <h4>UNO game</h4>
             <p>One of my pet projects, you can play UNO online against two players managed by the computer</p>

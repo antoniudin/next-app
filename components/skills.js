@@ -11,7 +11,6 @@ export default function About() {
                 <p>
                     Designed, developed, and released a POS system app with 1000+ downloads on the Google Play Market over 120 b2b  paying customers. https://www.linxx.pro
                 </p>
-<br />
 <div className={styles.skill_title}>
             <div className={styles.manager}></div>
                 <h4>Managment</h4>
