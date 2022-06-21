@@ -15,11 +15,11 @@ I have an experience with .NET, C#, MVC, MS SQL, RESTfull APIs <br />I can work 
             <br />
         
             <div className={styles.socials}>
-                <a target="_blank" href="https://drive.google.com/file/d/1naw-eIYAzQgwKKh8bJasNjkJRbs7h-S3/view?usp=sharing" className={styles.techstack_item}>Resume</a>
+                <a  href="https://drive.google.com/file/d/1naw-eIYAzQgwKKh8bJasNjkJRbs7h-S3/view?usp=sharing" className={styles.techstack_item}>Resume</a>
                 <div className={styles.techstack_item}>Slides</div>
-                <a target="_blank" href="https://github.com/antoniudin" className={styles.github}></a>
-                <a target="_blank" href="https://www.linkedin.com/in/ai431/" className={styles.youtube}></a>
-                <a target="_blank"href="https://www.linkedin.com/in/ai431/" className={styles.linkedin}></a>
+                <a href="https://github.com/antoniudin" className={styles.github}></a>
+                <a href="https://www.linkedin.com/in/ai431/" className={styles.youtube}></a>
+                <a href="https://www.linkedin.com/in/ai431/" className={styles.linkedin}></a>
             </div>
         </div>
     )
