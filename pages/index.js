@@ -5,6 +5,7 @@ import Contact from '../components/contact'
 import { useEffect, useState, Fragment } from 'react'
 import Work from '../components/work'
 import Link from '../components/link'
+import Head from 'next/head'
 
 export default function Home() {
 
@@ -73,7 +74,9 @@ export default function Home() {
 
   return (
     <Fragment>
-    
+      <Head>
+        <title>Anton Iudin</title>
+      </Head>
     <div className={styles.container}>
       {items.map(entity=>
         <div 
