@@ -20,7 +20,7 @@ export default function Work() {
         
             <Tech things={['React', 'Java Script', 'css', 'html']}/>
             <h4>To Do list</h4>
-            <p>A simple do to list, built on .net platform with user authentification, different types of user roles,  </p>
+            <p>A simple to-do list built on a .net platform with MS SQL Server database.</p>
         
             <Tech things={['.NET Core','C#', 'MVC','Entity Framework','MS SQL', 'LINQ', 'bootstrap']}/>
             </div>
