@@ -16,7 +16,7 @@ export default function About() {
             </p>
             
             <div className={styles.socials}>
-                <a  href="bit.ly/3HLObrN" className={styles.techstack_item}>Resume</a>
+                <a  href="https://bit.ly/3HLObrN" className={styles.techstack_item}>Resume</a>
                 <a href="https://bit.ly/3Nc8aRl" className={styles.techstack_item}>Slides</a>
                 <a href="https://github.com/antoniudin" className={styles.github}></a>
                 <a href="https://www.linkedin.com/in/ai431/" className={styles.youtube}></a>
